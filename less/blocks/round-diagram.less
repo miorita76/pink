@@ -1,0 +1,133 @@
+.round-diagram {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .round-diagram {
+    position: relative;
+    display: block;
+    width: @tablet-width;
+    height: 440px;
+    margin: 0 auto;
+//    outline: solid 1px red;
+  }
+
+  .round-diagram::before {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 20px;
+    width: 240px;
+    height: 300px;
+    background-image: url("../img/details/icon-timer.svg"), url("../img/details/24.png");
+    background-position: 0 18px, 67px 137px;
+    background-size: 240px, 105px;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .round-diagram::after {
+    position: absolute;
+    content: "";
+    top: 115px;
+    left: 39px;
+    width: 202px;
+    height: 202px;
+    box-shadow: inset 0 0 0 14px @pink;
+    border-radius: 50%;
+  }
+
+  .round-diagram__title {
+    margin: 0;
+    padding: 95px 0 0 330px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: @bold;
+    text-align: left;
+    color: @black;
+  }
+  .round-diagram__title span {
+    display: block;
+  }
+
+  .round-diagram__description {
+    margin: 0;
+    padding: 10px 0 0 330px;
+    width: 300px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: @regular;
+    text-align: left;
+    color: @dark-blue;
+  }
+  .round-diagram__description span {
+    display: block;
+  }
+
+  .round-diagram__link {
+    display: block;
+    margin: 0;
+    padding: 12px 0 0 330px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: @regular;
+    color: @pink;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .round-diagram {
+    position: relative;
+    display: block;
+    width: @desktop-width;
+    height: 445px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+
+  .round-diagram::before {
+    top: 18px;
+    left: 130px;
+    width: 300px;
+    height: 370px;
+    background-position: 0 18px, 84px 165px;
+    background-size: 300px, 130px;
+  }
+
+  .round-diagram::after {
+    top: 105px;
+    left: 150px;
+    width: 254px;
+    height: 254px;
+    box-shadow: inset 0 0 0 20px @pink;
+  }
+
+  .round-diagram__title {
+    padding: 129px 0 0 496px;
+    line-height: 30px;
+  }
+  .round-diagram__title span {
+    display: inline;
+  }
+  
+  .round-diagram__description {
+    margin: 0;
+    padding: 24px 0 0 496px;
+    width: 530px;
+    font-size: 18px;
+    line-height: 30px;
+//    outline: solid 1px green;
+  }
+  .round-diagram__description span {
+    display: inline;
+  }
+
+  .round-diagram__link {
+    display: block;
+    padding: 30px 0 0 496px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+}

@@ -1,0 +1,129 @@
+.page-main {
+  width: @mobile-width;
+  margin: 0 auto;
+}
+
+.page-main__phrase {
+  margin: 6px auto;
+  padding: 38px 0 0 0;
+  height: 133px; // 6p + 133px + 6px + 38px = 183px
+  width: 245px;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: center;
+  color: @dark-blue;
+//  outline: solid 1px blue;
+}
+
+.page-main__phrase--form {
+  margin: 0 auto;
+  padding: 44px 0 0 0;
+  height: 106px; // 6p + 133px + 6px + 38px = 183px
+  width: 280px;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: center;
+  color: @dark-blue;
+//  outline: solid 1px magenta;
+}
+
+.page-main__phrase-upload {
+  margin: 0 auto 20px auto;
+  height: 133px; // 6p + 133px + 6px + 38px = 183px
+  width: 255px;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: center;
+  color: @dark-blue;
+//  outline: solid 1px blue;
+}
+
+.page-main__phrase-upload p:first-child {
+  margin: 0;
+  padding: 35px 0 0 0;
+}
+
+.page-main__phrase-upload p:last-child {
+  margin: 0;
+  padding: 0;
+}
+.page-main__phrase-hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .page-main__phrase {
+    margin: 20px auto 0 auto;
+    padding: 72px 0 0 0;
+    width: 440px;
+    font-size: 18px;
+//    outline: solid 1px red;
+  }
+
+  .page-main__phrase--form {
+    margin: 20px auto 0 auto;
+    padding: 72px 0 0 0;
+    width: 500px;
+    font-size: 18px;
+//    outline: solid 1px red;
+  }
+  .page-main__phrase-hidden {
+    display: unset;
+  }
+  
+  .page-main__phrase-upload {
+    margin: 0 auto 63px auto;
+    height: 133px; // 6p + 133px + 6px + 38px = 183px
+    width: 435px;
+    font-size: 18px;
+//    outline: solid 1px blue;
+  }
+
+  .page-main__phrase-upload p:first-child {
+    padding: 68px 0 0 0;
+  }
+
+  .page-main__phrase-upload p:last-child {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  .page-main__phrase {
+    margin: 20px auto 15px auto;
+    width: 575px;
+//    outline: solid 1px blue;
+  }
+
+  .page-main__phrase--form {
+    width: 770px;
+//    outline: solid 1px blue;
+  }
+  
+  .page-main__phrase-upload {
+    margin: 10px auto 47px auto;
+    height: 133px; // 6p + 133px + 6px + 38px = 183px
+    width: 450px;
+//    outline: solid 1px blue;
+  }
+
+  .page-main__phrase-upload p:first-child {
+    padding: 52px 0 0 0;
+  }
+
+}

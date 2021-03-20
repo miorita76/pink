@@ -1,0 +1,590 @@
+.user-form {
+  width: @mobile-width;
+  margin: 0 auto;
+  padding: 0;
+//  outline: solid 1px blue;
+}
+
+.user-form__form {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.user-form__person-data {
+  margin: 0;
+  padding: 0;
+  height: 385px;
+  border: none;
+//  outline: solid 1px green;
+}
+
+.user-form__person-data ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-form__person-data ul li {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.user-form__person-data ul li label {
+  margin: 0 0 0 43px;
+  padding: 28px 0 0 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: left;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__person-data ul li input[type=text] {
+  width: 280px;
+  height: 60px;
+  margin: 5px 0 0 20px;
+  padding: 0 0 0 20px;
+  
+  border: 2px solid rgb(229, 229, 229);
+
+  box-sizing: border-box;
+  background-color: @white;
+}
+
+.user-form__person-data ul li input[type=text]:hover { border-color: @surActive; }
+.user-form__person-data ul li input[type=text]:active { border-color: @pink; }
+
+.user-form__person-data ul li input::placeholder {
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: @dark-blue;
+}
+
+.user-form__achievment {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 608px;
+  border: none;
+  
+  background-color: transparent;//#f2f2f2;
+}
+
+.user-form__achievment legend {
+  width: 220px;
+  margin: 0 auto;
+  padding: 0;
+
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 18px;
+  text-align: center;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__achievment-list {
+  margin: 115px 0 0 0;
+  padding: 0;
+  list-style: none;
+//outline: solid 1px blue;
+}
+
+.user-form__achievment-item {
+  margin: 44px 20px 0 20px;
+  padding: 0;
+//  outline: solid 1px green;
+}
+
+.user-form__achievment-item input[type="checkbox"] { display: none; }
+
+.user-form__achievment-item input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-form__achievment-item input[type="checkbox"] + label svg { padding: 0 0 0 8px; }
+.user-form__achievment-item input[type="checkbox"]:checked + label svg {
+  fill: @pink;
+}
+
+.user-form__achievment-item input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border: solid 2px rgba(40, 54, 69, 0.3);
+}
+
+.user-form__achievment-item input[type="checkbox"] + label:hover::before { border-color: rgb(40, 54, 69); }
+.user-form__achievment-item input[type="checkbox"] + label:active::before { border-color: @pink; }
+
+.user-form__achievment-item span {
+  margin: 0 0 0 34px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 38px;
+  text-align: left;
+  color: @dark-blue;
+}
+
+.user-form__contacts {
+  margin: 0;
+  padding: 0;
+  height: 285px;
+  border: none;
+//  outline: solid 1px magenta;
+}
+
+.user-form__contacts ul {
+  margin: 0;
+  padding: 10px 0 0 0;
+  list-style: none;
+}
+
+.user-form__contacts ul li {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.user-form__contacts ul li label {
+  margin: 0 0 0 43px;
+  padding: 28px 0 0 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: left;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__contacts ul li input[type=tel],
+.user-form__contacts ul li input[type=email] {
+  width: 280px;
+  height: 62px;
+  margin: 5px 0 0 20px;
+  padding: 0 0 0 20px;
+  
+  border: 2px solid rgb(229, 229, 229);
+
+  box-sizing: border-box;
+  background-color: @white;
+}
+
+.user-form__contacts ul li input[type=tel]:hover,
+.user-form__contacts ul li input[type=email]:hover { 
+  border-color: @surActive;
+}
+
+.user-form__contacts ul li input[type=tel]:active,
+.user-form__contacts ul li input[type=email]:active {
+  border-color: @pink;
+}
+
+.user-form__contacts ul li input::placeholder {
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: @dark-blue;
+}
+
+//*********************************************************************
+/*.user-form__application {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 340px;
+  border: none;
+//  outline: solid 1px green;
+}
+
+.user-form__application legend {
+  width: 180px;
+  margin: 0 auto;
+  padding: 0;
+
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 18px;
+  text-align: center;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__application-list {
+  margin: 110px 0 0 0;
+  padding: 0;
+  list-style: none;
+//  outline: solid 1px blue;
+}
+
+.user-form__application-item {
+  margin: 35px 20px 0 20px;
+  padding: 0;
+  height: 39px;
+//  outline: solid 1px brown;
+}
+
+.user-form__application-item input[type="radio"] { display: none; }
+
+.user-form__application-item input[type="radio"] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-form__application-item input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border: solid 1.5px rgba(40, 54, 69, 0.3);
+  border-radius: 18px;
+}
+
+.user-form__application-item input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 15px;
+  width: 15px;
+  background-color: @pink;
+  border-radius: 10px;
+}
+
+.user-form__application-item input[type="radio"] + label:hover::before { border-color: rgb(40, 54, 69); }
+.user-form__application-item input[type="radio"] + label:active::before { border-color: @pink; }
+
+.user-form__application-item span {
+  margin: 0 0 0 69px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 40px;
+  text-align: left;
+  color: @dark-blue;
+}
+*/
+.user-form__emotion {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 320px;
+//  outline: solid 1px brown;
+}
+
+.user-form__emotion label {
+  width: 190px;
+  margin: 0 auto;
+  padding: 0;
+
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 18px;
+  text-align: center;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__emotion textarea {
+  width: 280px;
+  height: 200px;
+  margin: 75px 0 0 20px;
+  padding: 0;
+//  background-color: transparent; // temporar
+}
+
+.user-form__emotion textarea::placeholder {
+  margin: 0;
+  padding: 15px 0 0 0;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: center;
+  color: @dark-blue;
+}
+
+.user-form__button {
+  margin: 0;
+  padding: 0;
+  height: 145px;
+//  outline: solid 1px blue;
+}
+
+.user-form__button button {
+  width: 280px;
+  height: 64px;
+  margin: 0 0 0 20px;
+  font-size: 18px;
+  font-weight: @bold;
+  line-height: 30px;
+  text-align: center;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @green;
+  border: none;
+}
+
+.user-form__button button:hover { background-color: @greenhover; }
+.user-form__button button:active { color: @surDeschis; }
+
+.user-form__button p {
+  width: 200px;
+  margin: 35px 0 0 60px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: center;
+  color: @dark-blue;
+  text-transform: uppercase;
+}
+
+.user-form__button p span { display: none; }
+
+.user-form__button p sup {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .user-form {
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0;
+  //  outline: solid 1px blue;
+  }
+
+  .user-form__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .user-form__person-data {
+    order: -4;
+    margin: 0;
+    padding: 0;
+    height: 370px;
+    border: none;
+    outline: solid 1px blue;
+  }
+
+
+
+  .user-form__person-data ul li {
+    margin: 50px 0 0 0;
+    padding: 0;
+  }
+
+  .user-form__person-data ul li label {
+    margin: 0 0 0 20px;
+  }
+
+  .user-form__person-data ul li input[type=text] {
+    width: 522px;
+    margin: 5px 0 0 15px;
+  }
+
+  .user-form__person-data ul li:nth-child(2) input[type=text] {
+    width: 562px;
+  }
+
+
+
+
+  .user-form__achievment {
+    order: -1;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+  }
+
+  .user-form__contacts {
+    order: -2;
+    margin: 0;
+    padding: 0;
+    height: 280px;
+  }
+
+/* ----------- START -- user-form__application ---------------------*/
+  .user-form__application {
+    order: -3;
+    margin: 30px 20px 0 20px;
+    padding: 0;
+    height: 303px;
+    border: 2px solid @surMediu;
+//    outline: solid 1px green;
+  }
+
+  .user-form__application legend {
+    width: 370px;
+    margin: 0 auto;
+    padding: 0;
+
+    font-size: 14px;
+    font-weight: @regular;
+    line-height: 30px;
+    text-align: center;
+    color: @pink;
+    text-transform: uppercase;
+  }
+
+  .user-form__application-list {
+    margin: 38px 0 0 37px;
+    padding: 0;
+    list-style: none;
+//  outline: solid 1px blue;
+  }
+
+.user-form__application-item {
+  margin: 35px 20px 0 20px;
+  padding: 0;
+  height: 39px;
+//  outline: solid 1px brown;
+}
+
+.user-form__application-item input[type="radio"] { display: none; }
+
+.user-form__application-item input[type="radio"] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-form__application-item input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border: solid 1.5px rgba(40, 54, 69, 0.3);
+  border-radius: 18px;
+}
+
+.user-form__application-item input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 15px;
+  width: 15px;
+  background-color: @pink;
+  border-radius: 10px;
+}
+
+.user-form__application-item input[type="radio"] + label:hover::before { border-color: rgb(40, 54, 69); }
+.user-form__application-item input[type="radio"] + label:active::before { border-color: @pink; }
+
+.user-form__application-item span {
+  margin: 0 0 0 69px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 40px;
+  text-align: left;
+  color: @dark-blue;
+}
+/* ----------- END -- user-form__application ---------------------*/
+
+
+
+  .user-form__emotion {
+    margin: 0;
+    padding: 0;
+    height: 320px;
+    outline: solid 1px brown;
+  }
+
+  .user-form__button {
+    margin: 0;
+    padding: 0;
+    height: 180px;
+    outline: solid 1px blue;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .user-form {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0;
+//  outline: solid 1px blue;
+  }
+
+  .user-form__form {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .user-form__person-data {
+    margin: 0;
+    padding: 0;
+    height: 370px;
+    border: none;
+    outline: solid 1px blue;
+  }
+
+  .user-form__achievment {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+  }
+
+  .user-form__contacts {
+    margin: 0;
+    padding: 0;
+    height: 280px;
+  }
+
+  .user-form__application {
+    margin: 0;
+    padding: 0;
+    height: 340px;
+    outline: solid 1px green;
+  }
+
+  .user-form__emotion {
+    margin: 0;
+    padding: 0;
+    height: 320px;
+    outline: solid 1px brown;
+  }
+
+  .user-form__button {
+    margin: 0;
+    padding: 0;
+    height: 180px;
+    outline: solid 1px blue;
+  }
+
+}

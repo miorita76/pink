@@ -1,0 +1,150 @@
+.application-download {
+  margin: 0 auto;
+  padding: 28px 0 20px 0;
+  
+  width: @mobile-width;
+  background-color: @dark-blue;
+}
+
+.application-download__wrapper {
+
+}
+
+.application-download__promo-title {
+  display: none;
+}
+
+.application-download__btn {
+  width: 275px;
+  margin: 0 auto;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+
+  &:hover,
+  &:focus,  {
+    color: @pink;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: @pink30;
+  }
+}
+
+.application-download__list {
+  margin: 35px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.application-download__item {
+  list-style: none;
+  text-align: center;
+}
+
+.application-download__item:not(:last-child) {
+  margin-right: 38px;
+}
+
+.application-download__description {
+  margin: 0 auto;
+  padding: 15px 0 9px 0;
+  width: 235px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: @light;
+  color: @white;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+
+  .application-download {
+    position: relative;
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+    background-color: transparent;
+  }
+  
+  .application-download__wrapper {
+    position: absolute;
+    width: 265px;
+    top: -565px;
+    left: 0;
+  }
+
+  .application-download__promo-title {
+    padding: 0 0 0 75px;
+    display: block;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: @light;
+    color: @white;
+  }
+  
+  .application-download__btn {
+    width: 295px;
+    margin: -10px 0 0 20px;
+  }
+
+  .application-download__list {
+    margin: 50px 0 0 75px;
+  }
+
+  .application-download__description {
+    padding: 39px 0 9px 22px;
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    color: @white;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .application-download {
+    position: relative;
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+    background-color: transparent;
+  }
+ 
+  .application-download__wrapper {
+    position: absolute;
+    width: 300px;
+    top: -683px;
+    left: 90px;
+  }
+ 
+  .application-download__promo-title {
+    padding: 0 0 0 75px;
+    display: block;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: @light;
+    color: @white;
+  }
+
+  .application-download__btn {
+    width: 295px;
+    margin: 0 0 0 40px;
+  }
+
+  .application-download__list {
+    margin: 70px 0 0 75px;
+  }
+
+  .application-download__description {
+    padding: 48px 0 9px 42px;
+  }
+
+}

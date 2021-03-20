@@ -1,0 +1,307 @@
+.main-nav {
+  position: relative;
+
+  width:  @mobile-width;
+  min-height: 71px;
+  margin: 0 auto;
+
+  background-color: @black30;
+//  outline: solid 1px green;
+}
+
+.main-nav__link {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 75px;
+  height: 22px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.main-nav__link[href]:hover svg,
+.main-nav__link[href]:focus svg {
+  fill: @pink;
+}
+.main-nav__link[href]:active svg {
+  fill: @white30;
+}
+
+.main-nav__link svg {
+  margin-top: -18px;
+  margin-left: -71px; 
+  fill: @white;
+}
+
+.main-nav__logo-glasses,
+.main-nav__logo-stars {
+  display: none;
+}
+
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 45px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 20px;
+  left: 0;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before,
+.main-nav--closed .main-nav__toggle:focus::before {
+  background-color: @pink;
+  box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: @pink30;
+  box-shadow: 0 10px 0 0 @pink30, 0 20px 0 0 @pink30;
+}
+
+.main-nav--opened {
+  background-color: @dark-blue;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 24px;
+
+    width: 27px;
+    height: 5px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after  {
+    background-color: @pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @pink30;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+// ************************* TABLET - ONLY *******************************
+@media (max-width: @tablet-width-only) {
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 71px; // ATENTION !!!
+    right: 0;
+    left: 0;
+    z-index: 10;
+
+    min-height: 10vh;
+
+    background-color: @dark-blue;
+//    outline: solid 1px green;
+  }
+
+  .main-nav--opened .main-nav__wrapper::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 7px;
+    height: 100%;
+
+    box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+}
+
+// ++++++++++++++++++++++++++++++++++++++ MOBILE to TABLET ++++++++++++++++++++++++++++++++++++++++
+@media   screen and (max-width: @tablet-width-only) and (min-width: @mobile-width-only) {
+  .main-nav--opened .main-nav__wrapper {
+    top: 110px;
+  }
+}
+
+// ++++++++++++++++++++++++++++++++++++++ TABLET ++++++++++++++++++++++++++++++++++++++++
+@media (min-width: @tablet-width) {
+
+  .main-nav {
+    width:  @tablet-width;
+    min-height: 110px;
+
+//  outline: solid 1px green;
+  }
+
+  .main-nav__logo {
+    top: 20px;
+    left: 20px;
+
+    display: block;
+    width: 147px;
+    height: 40px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  //  start LOGO
+  .main-nav__link {
+    width: 147px;
+    height: 41px;
+    margin: 5px 0 45px 0;
+  }
+
+  .main-nav__link svg {
+    margin: 0;
+  }
+
+  .main-nav__logo-glasses {
+    display: inherit;
+  }
+  
+  .main-nav__logo-stars {
+    display: none;
+  }
+  //  end LOGO
+  
+  .main-nav__toggle {
+    top: 25px;
+    right: 0;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 23px;
+  }
+
+}
+
+// ++++++++++++++++++++++++++++++++++++++ DESKTOP ++++++++++++++++++++++++++++++++++++++++
+@media (min-width: @desktop-width) {
+
+  .main-nav {
+    width:  @desktop-width;
+    min-height: 110px;
+
+    background-color: @black30;
+
+//  outline: solid 1px green;
+  }
+  
+    .main-nav__logo {
+    top: 27px;
+    left: 130px;
+
+    display: block;
+    width: 147px;
+    height: 40px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+// start LOGO top
+  .main-nav__logo-glasses,
+  .main-nav__logo-stars {
+    display: block;
+  }
+  .main-nav__link {
+    margin: 5px 0 0 110px;
+  }
+// end LOGO top
+  
+  .main-nav__toggle {
+    display: none;
+  }
+}

@@ -1,0 +1,572 @@
+.user-form {
+  width: @mobile-width;
+  margin: 0 auto;
+  padding: 0;
+  outline: solid 1px blue;
+}
+/* ----- START --- user-form__person-data ------ */
+.user-form__person-data {
+  margin: 0;
+  padding: 0;
+  height: 388px;
+  border: none;
+//  outline: solid 1px green;
+}
+
+.user-form__person-data ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-form__person-data ul li {
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+
+.user-form__person-data ul li label {
+  margin: 18px 0 0 43px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: left;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__person-data ul li input[type=text] {
+  width: 280px;
+  height: 63px;
+  margin: 5px 0 0 20px;
+  padding: 0;
+  
+  border: 2px solid rgb(229, 229, 229);
+
+  box-sizing: border-box;
+  background-color: transparent;//@white;
+}
+
+.user-form__person-data ul li input[type=text]:hover { border-color: @surActive; }
+.user-form__person-data ul li input[type=text]:active { border-color: @pink; }
+
+.user-form__person-data ul li input::placeholder {
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: @dark-blue;
+}/* ----- END --- user-form__person-data ------ */
+/* ----- START --- user-form__achievment ------ */
+.user-form__achievment {
+  margin: 0;
+  padding: 0;
+  height: 610px;
+  border: none;
+  background-color: #f2f2f2;
+//  outline: solid 1px magenta;
+}
+
+.user-form__achievment legend {
+  width: 220px;
+  margin: 0 auto;
+  padding: 38px 0 0 0;
+
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 18px;
+  text-align: center;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__achievment-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+//outline: solid 1px blue;
+}
+
+.user-form__achievment-item {
+  margin: 40px 20px 44px 20px;
+  padding: 0;
+//  outline: solid 1px green;
+}
+
+.user-form__achievment-item input[type="checkbox"] { display: none; }
+
+.user-form__achievment-item input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-form__achievment-item input[type="checkbox"] + label svg { padding: 0 0 0 8px; fill:transparent; }
+.user-form__achievment-item input[type="checkbox"]:checked + label svg { fill: @pink; }
+
+.user-form__achievment-item input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border: solid 2px rgba(40, 54, 69, 0.3);
+}
+
+.user-form__achievment-item input[type="checkbox"] + label:hover::before { border-color: rgb(40, 54, 69); }
+.user-form__achievment-item input[type="checkbox"] + label:active::before { border-color: @pink; }
+
+.user-form__achievment-item span {
+  margin: 0 0 0 34px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 38px;
+  text-align: left;
+  color: @dark-blue;
+} /* ----- END --- user-form__achievment ------ */
+/* ----- START --- user-form__contacts ------ */
+.user-form__contacts {
+  margin: 0;
+  padding: 0;
+  height: 280px;
+  border: none;
+//  outline: solid 1px magenta;
+}
+
+.user-form__contacts legend {
+  display: none;
+}
+
+.user-form__contacts ul {
+  margin: 25px 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.user-form__contacts ul li {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.user-form__contacts ul li label {
+  margin: 0 0 0 23px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: left;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__contacts ul li input[type=tel],
+.user-form__contacts ul li input[type=email] {
+  width: 280px;
+  height: 62px;
+  margin: 5px 0 0 0;
+  padding: 0;
+  
+  border: 2px solid rgb(229, 229, 229);
+
+  box-sizing: border-box;
+  background-color: transparent;//@white;
+}
+
+.user-form__contacts ul li input[type=tel]:hover,
+.user-form__contacts ul li input[type=email]:hover { 
+  border-color: @surActive;
+}
+
+.user-form__contacts ul li input[type=tel]:active,
+.user-form__contacts ul li input[type=email]:active {
+  border-color: @pink;
+}
+
+.user-form__contacts ul li input::placeholder {
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: @dark-blue;
+} /* ----- END --- user-form__contacts ------ */
+/* ----- START --- user-form__application ------ */
+.user-form__application {
+  margin: 0;
+  padding: 0;
+  height: 340px;
+  border: none;
+  background-color: transparent;//#f2f2f2;
+//  outline: solid 1px green;
+}
+
+.user-form__application legend {
+  width: 180px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 18px;
+  text-align: center;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__application-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+//  outline: solid 1px blue;
+}
+
+.user-form__application-item {
+  margin: 35px 20px 0 20px;
+  padding: 0;
+  height: 39px;
+//  outline: solid 1px brown;
+}
+
+.user-form__application-item input[type="radio"] { display: none; }
+
+.user-form__application-item input[type="radio"] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-form__application-item input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border: solid 1.5px rgba(40, 54, 69, 0.3);
+  border-radius: 18px;
+}
+
+.user-form__application-item input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 15px;
+  width: 15px;
+  background-color: @pink;
+  border-radius: 10px;
+}
+
+.user-form__application-item input[type="radio"] + label:hover::before { border-color: rgb(40, 54, 69); }
+.user-form__application-item input[type="radio"] + label:active::before { border-color: @pink; }
+
+.user-form__application-item span {
+  margin: 0 0 0 69px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 40px;
+  text-align: left;
+  color: @dark-blue;
+} /* ----- END --- user-form__application ------ */
+/* ----- START --- user-form__emotion ------ */
+.user-form__emotion {
+  margin: 0;
+  padding: 0;
+  height: 320px;
+  border: none;
+//  outline: solid 1px green;
+}
+
+.user-form__emotion legend {
+  width: 185px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 18px;
+  text-align: center;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-form__emotion textarea {
+  width: 280px;
+  height: 200px;
+  margin: 16px 0 0 20px;
+  padding: 0;
+//  background-color: transparent; // temporar
+}
+
+.user-form__emotion textarea::placeholder {
+  margin: 0;
+  padding: 15px 0 0 0;
+  font-size: 18px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: center;
+  color: @dark-blue;
+} /* ----- END --- user-form__emotion ------ */
+/* ----- START --- user-form__button ------ */
+.user-form__button {
+  margin: 0;
+  padding: 0;
+  height: 145px;
+//  outline: solid 1px green;
+}
+
+.user-form__button button {
+  width: 280px;
+  height: 64px;
+  margin: 0 0 0 20px;
+  font-size: 18px;
+  font-weight: @bold;
+  line-height: 30px;
+  text-align: center;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @green;
+  border: none;
+}
+
+.user-form__button button:hover { background-color: @greenhover; }
+.user-form__button button:active { color: @surDeschis; }
+
+.user-form__button p {
+  width: 200px;
+  margin: 35px 0 0 60px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: center;
+  color: @dark-blue;
+  text-transform: uppercase;
+}
+
+.user-form__button p span { display: none; }
+
+.user-form__button p sup {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  color: @pink;
+} /* ----- END --- user-form__button ------ */
+
+@media (min-width: @tablet-width) {
+  .user-form {
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0;
+    outline: solid 1px red;
+  }
+
+  .user-form__form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+/* ----- START --- user-form__person-data ------ */
+  .user-form__person-data {
+    order: -4;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    border: none;
+    outline: solid 1px blue;
+  }
+
+  .user-form__person-data ul li {
+    margin: 49px 0 0 0;
+    padding: 0;
+  }
+
+  .user-form__person-data ul li label {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+  .user-form__person-data ul li input[type=text] {
+    height: 63px;
+    margin: 5px 0 0 20px;
+    padding: 0;
+
+    background-color: transparent;//@white;
+  }
+
+  .user-form__person-data ul li input[type=text] {
+    width: 522px;
+    margin: 5px 0 0 15px;
+  }
+
+  .user-form__person-data ul li:nth-child(2) input[type=text] {
+    width: 562px;
+  }/* ----- END --- user-form__person-data ------ */
+/* ----- START --- user-form__application ------ */
+  .user-form__application {
+    order: -3;
+    margin: 0 20px;
+    padding: 0;
+    height: 307px;
+    border: 2px solid @surMediu;
+    outline: solid 1px green;
+  }
+
+  .user-form__application legend {
+    width: 370px;
+    margin: 0 auto;
+    padding: 0;
+
+    font-size: 14px;
+    font-weight: @regular;
+    line-height: 30px;
+    text-align: center;
+    color: @pink;
+    text-transform: uppercase;
+  }
+
+  .user-form__application-list {
+    margin: 38px 0 0 57px;
+    padding: 0;
+//  outline: solid 1px blue;
+  }
+
+  .user-form__application-item {
+    margin: 35px 20px 0 0;
+    padding: 0;
+    height: 39px;
+//  outline: solid 1px brown;
+  }
+
+  .user-form__application-item span {
+    margin: 0 0 0 60px;
+    padding: 0;
+  } /* ----- END --- user-form__application ------ */
+/* ----- START --- user-form__contacts ------ */
+  .user-form__contacts {
+    position: relative;
+    order: -2;
+    margin: 53px 20px 0 20px;
+    padding: 0;
+    height: 320px;
+    border: 2px solid @surMediu;
+  }
+
+  .user-form__contacts legend {
+    display: unset;
+    width: 270px;
+    margin: 0 auto;
+    padding: 0;
+
+    font-size: 14px;
+    font-weight: @regular;
+    line-height: 30px;
+    text-align: center;
+    color: @pink;
+    text-transform: uppercase;
+  }
+
+  .user-form__contacts ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .user-form__contacts ul li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .user-form__contacts ul li label {
+    position: absolute;
+    margin: 105px 0 0 76px;
+    padding: 0;
+  }
+
+  .user-form__contacts ul li input[type=tel],
+  .user-form__contacts ul li input[type=email] {
+    width: 500px;
+    margin: 32px 0 37px 57px;
+    padding: 0;
+  }
+
+  .user-form__contacts ul li input::placeholder {
+    margin: 0;
+    padding: 0 0 0 20px;
+  }
+/*
+.user-form__contacts ul {
+  margin: 25px 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.user-form__contacts ul li {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.user-form__contacts ul li label {
+  margin: 0 0 0 23px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: @regular;
+  line-height: 30px;
+  text-align: left;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+  .user-form__contacts ul li input[type=tel],
+  .user-form__contacts ul li input[type=email] {
+    width: 280px;
+    height: 62px;
+    margin: 5px 0 0 0;
+    padding: 0;
+
+    border: 2px solid rgb(229, 229, 229);
+
+    box-sizing: border-box;
+    background-color: transparent;//@white;
+  }
+
+  .user-form__contacts ul li input[type=tel]:hover,
+  .user-form__contacts ul li input[type=email]:hover { 
+    border-color: @surActive;
+  }
+
+  .user-form__contacts ul li input[type=tel]:active,
+  .user-form__contacts ul li input[type=email]:active {
+    border-color: @pink;
+  }
+
+  .user-form__contacts ul li input::placeholder {
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-size: 18px;
+    font-weight: @regular;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: @dark-blue;
+  }
+*/
+/* ----- END --- user-form__contacts ------ */
+}
+
+@media (min-width: @desktop-width) {
+  .user-form {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0;
+//  outline: solid 1px blue;
+  }
+}

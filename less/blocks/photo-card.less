@@ -1,0 +1,271 @@
+.photo-card {
+  width: @mobile-width;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.photo-card__panorama {
+  width: @mobile-width;
+  margin: 0 0 23px 0;
+//  height: 330px;            // temporary
+//  outline: solid 1px green;  // temporary
+}
+
+.photo-card__panorama-picture {
+  position: relative;
+}
+
+.photo-card__panorama-picture img,
+.photo-card__item img { 
+  display: block; 
+}
+
+.photo-card__panorama-picture p {
+  position: absolute;
+  margin: 0;
+  padding: 10px 20px;
+  top: 0;
+  left: 160px;
+  font-size: 12px;
+  font-weight: @bold;
+  line-height: 12px;
+  text-align: center;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @pink;
+}
+
+.photo-card__panorama-detail,
+.photo-card__item-detail {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.photo-card__panorama-author,
+.photo-card__item-author {
+  margin: 0;
+  padding: 18px 0 0 17px;
+  font-size: 14px;
+  font-weight: @bold;
+  line-height: 24px;
+  text-align: left;
+  color: @dark-blue;
+}
+
+.photo-card__panorama-author span,
+.photo-card__item-author span {
+  font-weight: @light;
+}
+
+.photo-card__panorama-comment,
+.photo-card__item-comment {
+  width: 245px;
+  margin: 0;
+  padding: 0 0 0 17px;
+  font-size: 14px;
+  font-weight: @light;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: @dark-blue;  
+}
+
+.photo-card__panorama-likes,
+.photo-card__item-likes {
+  position: relative;
+  margin: 0;
+  padding: 10px 0 18px 49px;
+  font-size: 12px;
+  font-weight: @regular;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.photo-card__panorama-likes::before,
+.photo-card__item-likes::before {
+  position: absolute;
+  content: "";
+  bottom: 23px;
+  left: 18px;
+  width: 13px;
+  height: 13px;
+  background: url("../img/icon-heart.svg") no-repeat 0 0;
+  cursor: pointer;
+}
+
+.photo-card__item {
+  width: 280px;
+  margin: 20px auto;
+  padding: 0;
+//  height: 323px;            // temporary
+//  outline: solid 1px blue;  // temporary
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card {
+    width: @tablet-width;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .photo-card__panorama {
+    width: @tablet-width;
+    margin: 0 auto 30px auto;
+//    height: 630px;            // temporary
+//    outline: solid 1px green;  // temporary
+  }
+
+  .photo-card__panorama-picture p {
+    padding: 10px 20px;
+    top: 58px;
+    left: 500px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .photo-card__panorama-detail {
+    position: relative;
+    width: 630px;
+  }
+
+  .photo-card__panorama-author {
+    margin: 0;
+    padding: 26px 0 0 33px;
+  }
+
+  .photo-card__panorama-comment {
+    width: 515px;
+    padding: 0 0 23px 33px;
+  }
+
+  .photo-card__panorama-likes {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 28px;
+    right: 65px;
+  }
+
+  .photo-card__panorama-likes::before {
+    top: 4px;
+    left: 107px;
+  }
+
+  .photo-card__item {
+    width: 300px;
+    margin: 20px auto 0 auto;
+    padding: 0;
+//    height: 455px;            // temporary
+//    outline: solid 1px blue;  // temporary
+  }
+
+  .photo-card__item-detail {
+    position: relative;
+    width: 300px;
+    height: 155px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
+  .photo-card__item-author {
+    padding: 26px 0 0 33px;
+  }
+
+  .photo-card__item-author span {
+    font-weight: @light;
+  }
+
+  .photo-card__item-comment {
+    padding: 0 0 0 33px;
+  }
+
+  .photo-card__item-likes {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 20px;
+    left: 33px;
+  }
+
+  .photo-card__item-likes::before {
+    bottom: 6px;
+    left: 227px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .photo-card {
+    width: @desktop-width;
+    justify-content: center;
+  }
+
+  .photo-card__panorama {
+    width: @desktop-width;
+    margin: 0 auto;
+//    height: 600px;            // temporary
+//    outline: solid 1px green;  // temporary
+  }
+
+  .photo-card__panorama-picture p {
+    top: 54px;
+    left: 930px;
+  }
+
+  .photo-card__panorama-detail {
+    position: relative;
+    width: 940px;
+    background-color: #f2f2f2;
+  }
+
+  .photo-card__panorama-author {
+    margin: 0;
+    padding: 25px 0 0 27px;
+  }
+
+  .photo-card__panorama-comment {
+    width: 870px;
+    padding: 0 0 23px 27px;
+  }
+
+  .photo-card__panorama-likes {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 26px;
+    right: 61px;
+  }
+
+  .photo-card__panorama-likes::before {
+    top: 4px;
+    left: 107px;
+  }
+
+  .photo-card__item {
+    width: 300px;
+    margin: 50px 10px 0 10px;
+    padding: 0;
+//    height: 555px;            // temporary
+//    outline: solid 1px green;  // temporary
+  }
+
+  .photo-card__item-author {
+    padding: 20px 0 0 27px;
+  }
+
+  .photo-card__item-comment {
+    padding: 0 0 0 27px;
+  }
+
+  .photo-card__item-likes {
+    bottom: 25px;
+    left: 27px;
+  }
+
+}

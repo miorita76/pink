@@ -1,0 +1,113 @@
+.upload-card {
+  width: @mobile-width;
+  height: 753px;
+  margin: 35px auto 0 auto;
+  padding: 0;
+  background-color: #f2f2f2;
+//  outline: solid 1px blue;  // temporary
+}
+
+.upload-card img {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+.upload-card__btn {
+  width: 275px;
+  margin: 38px auto 0 auto;
+  color: @pink;
+  border: 3px solid @pink;
+
+  &:hover,
+  &:focus,  {
+    color: #ffffff;
+    background-color: @pink;
+  }
+
+  &:active {
+    color: @surInchis;
+  }
+}
+
+.upload-card__btn--cancel {
+  width: 275px;
+  margin: 15px auto;
+  color: @surMediu;
+  border: 3px solid @surMediu;
+
+  &:hover,
+  &:focus,  {
+    color: @surInchis;
+    border: 3px solid @surInchis;
+  }
+
+  &:active {
+    background-color: @surInchis;
+    color: @surMediu;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .upload-card {
+    position: relative;
+    width: @tablet-width;
+    height: 511px;
+  }
+
+  .upload-card img {
+    display: block;
+    margin: 0;
+    padding: 60px 0 0 20px;
+  }
+
+  .upload-card__btn {
+    position: absolute;
+    width: 255px;
+    margin: 0;
+    top: 325px;
+    right: 32px;
+  }
+
+  .upload-card__btn--cancel {
+    position: absolute;
+    width: 255px;
+    margin: 0;
+    top: 402px;
+    right: 32px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .upload-card {
+    position: relative;
+    width: 940px;
+    height: 515px;
+//   outline: solid 1px magenta;  // temporary
+  }
+
+  .upload-card img {
+    display: block;
+    margin: 0;
+    padding: 56px 0 0 80px;
+  }
+
+  .upload-card__btn {
+    position: absolute;
+    width: 176px;
+    margin: 0;
+    top: 400px;
+    right: 288px;
+  }
+
+  .upload-card__btn--cancel {
+    position: absolute;
+    width: 176px;
+    margin: 0;
+    top: 400px;
+    right: 59px;
+  }
+
+}
